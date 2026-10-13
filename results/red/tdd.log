@@ -1,0 +1,217 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                                           [100%]
+=================================== FAILURES ===================================
+______________________________ test_empty_manager ______________________________
+tests/test_tdd.py:7: in test_empty_manager
+    assert manager.get_tasks() == ()
+           ^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:12: in get_tasks
+    raise NotImplementedError("Просмотр задач ещё не реализован")
+E   NotImplementedError: Просмотр задач ещё не реализован
+_________________________ test_add_and_normalize_task __________________________
+tests/test_tdd.py:13: in test_add_and_normalize_task
+    task = manager.add_task(" A ", " Анализ ", 3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+______________________________ test_invalid_id[] _______________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+______________________________ test_invalid_id[ ] ______________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_____________________________ test_invalid_id[1A] ______________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_____________________________ test_invalid_id[A B] _____________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________________ test_invalid_id[None] _____________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_____________________________ test_invalid_id[42] ______________________________
+tests/test_tdd.py:21: in test_invalid_id
+    manager.add_task(task_id, "Работа", 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_____________________________ test_invalid_title[] _____________________________
+tests/test_tdd.py:28: in test_invalid_title
+    manager.add_task("A", title, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________________ test_invalid_title[ ] _____________________________
+tests/test_tdd.py:28: in test_invalid_title
+    manager.add_task("A", title, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+___________________________ test_invalid_title[None] ___________________________
+tests/test_tdd.py:28: in test_invalid_title
+    manager.add_task("A", title, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________________ test_invalid_title[42] ____________________________
+tests/test_tdd.py:28: in test_invalid_title
+    manager.add_task("A", title, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+___________________________ test_invalid_duration[0] ___________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________________ test_invalid_duration[-1] ___________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________________ test_invalid_duration[1.5] __________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+___________________________ test_invalid_duration[2] ___________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_________________________ test_invalid_duration[True] __________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_________________________ test_invalid_duration[None] __________________________
+tests/test_tdd.py:34: in test_invalid_duration
+    manager.add_task("A", "Работа", duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_______________________ test_duplicate_task_is_rejected ________________________
+tests/test_tdd.py:38: in test_duplicate_task_is_rejected
+    manager.add_task("A", "Первая", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_______________________ test_task_snapshot_is_immutable ________________________
+tests/test_tdd.py:45: in test_task_snapshot_is_immutable
+    task = manager.add_task("A", "Анализ", 2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________________ test_single_task_schedule ___________________________
+tests/test_tdd.py:52: in test_single_task_schedule
+    manager.add_task("A", "Анализ", 3)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________ test_unknown_dependency_endpoint[X-A] _____________________
+tests/test_tdd.py:59: in test_unknown_dependency_endpoint
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________ test_unknown_dependency_endpoint[A-X] _____________________
+tests/test_tdd.py:59: in test_unknown_dependency_endpoint
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_____________________________ test_self_dependency _____________________________
+tests/test_tdd.py:66: in test_self_dependency
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+___________________ test_dependency_direction_and_duplicate ____________________
+tests/test_tdd.py:73: in test_dependency_direction_and_duplicate
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+________________ test_direct_cycle_is_rejected_without_mutation ________________
+tests/test_tdd.py:83: in test_direct_cycle_is_rejected_without_mutation
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+______________________ test_transitive_cycle_is_rejected _______________________
+tests/test_tdd.py:94: in test_transitive_cycle_is_rejected
+    manager.add_task(key, key, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________ test_parallel_tasks_join_at_latest_finish ___________________
+tests/test_tdd.py:104: in test_parallel_tasks_join_at_latest_finish
+    manager.add_task(key, key, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+____________________ test_ready_task_order_is_lexicographic ____________________
+tests/test_tdd.py:113: in test_ready_task_order_is_lexicographic
+    manager.add_task(key, key, 1)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________ test_schedule_is_repeatable_and_result_list_is_independent __________
+tests/test_tdd.py:120: in test_schedule_is_repeatable_and_result_list_is_independent
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+=========================== short test summary info ============================
+FAILED tests/test_tdd.py::test_empty_manager - NotImplementedError: Просмотр ...
+FAILED tests/test_tdd.py::test_add_and_normalize_task - NotImplementedError: ...
+FAILED tests/test_tdd.py::test_invalid_id[] - NotImplementedError: Добавление...
+FAILED tests/test_tdd.py::test_invalid_id[ ] - NotImplementedError: Добавлени...
+FAILED tests/test_tdd.py::test_invalid_id[1A] - NotImplementedError: Добавлен...
+FAILED tests/test_tdd.py::test_invalid_id[A B] - NotImplementedError: Добавле...
+FAILED tests/test_tdd.py::test_invalid_id[None] - NotImplementedError: Добавл...
+FAILED tests/test_tdd.py::test_invalid_id[42] - NotImplementedError: Добавлен...
+FAILED tests/test_tdd.py::test_invalid_title[] - NotImplementedError: Добавле...
+FAILED tests/test_tdd.py::test_invalid_title[ ] - NotImplementedError: Добавл...
+FAILED tests/test_tdd.py::test_invalid_title[None] - NotImplementedError: Доб...
+FAILED tests/test_tdd.py::test_invalid_title[42] - NotImplementedError: Добав...
+FAILED tests/test_tdd.py::test_invalid_duration[0] - NotImplementedError: Доб...
+FAILED tests/test_tdd.py::test_invalid_duration[-1] - NotImplementedError: До...
+FAILED tests/test_tdd.py::test_invalid_duration[1.5] - NotImplementedError: Д...
+FAILED tests/test_tdd.py::test_invalid_duration[2] - NotImplementedError: Доб...
+FAILED tests/test_tdd.py::test_invalid_duration[True] - NotImplementedError: ...
+FAILED tests/test_tdd.py::test_invalid_duration[None] - NotImplementedError: ...
+FAILED tests/test_tdd.py::test_duplicate_task_is_rejected - NotImplementedErr...
+FAILED tests/test_tdd.py::test_task_snapshot_is_immutable - NotImplementedErr...
+FAILED tests/test_tdd.py::test_single_task_schedule - NotImplementedError: До...
+FAILED tests/test_tdd.py::test_unknown_dependency_endpoint[X-A] - NotImplemen...
+FAILED tests/test_tdd.py::test_unknown_dependency_endpoint[A-X] - NotImplemen...
+FAILED tests/test_tdd.py::test_self_dependency - NotImplementedError: Добавле...
+FAILED tests/test_tdd.py::test_dependency_direction_and_duplicate - NotImplem...
+FAILED tests/test_tdd.py::test_direct_cycle_is_rejected_without_mutation - No...
+FAILED tests/test_tdd.py::test_transitive_cycle_is_rejected - NotImplementedE...
+FAILED tests/test_tdd.py::test_parallel_tasks_join_at_latest_finish - NotImpl...
+FAILED tests/test_tdd.py::test_ready_task_order_is_lexicographic - NotImpleme...
+FAILED tests/test_tdd.py::test_schedule_is_repeatable_and_result_list_is_independent
+30 failed in 0.13s

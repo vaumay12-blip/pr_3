@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="10" time="0.039" timestamp="2026-09-28T12:23:53.051116+03:00" hostname="57bfcde73c54"><testcase classname="tests.test_sdd" name="test_specification_example[S01]" time="0.001"><failure message="NotImplementedError: Планирование ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:19: in execute
+    return [[s.task_id, s.start, s.finish] for s in manager.build_schedule()]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:18: in build_schedule
+    raise NotImplementedError("Планирование ещё не реализовано")
+E   NotImplementedError: Планирование ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S02]" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S03]" time="0.000"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S04]" time="0.000"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S05]" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S06]" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:26: in test_specification_example
+    assert execute() == json.loads(example["expected_schedule_json"])
+           ^^^^^^^^^
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S07]" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:23: in test_specification_example
+    execute()
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S08]" time="0.000"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:23: in test_specification_example
+    execute()
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S09]" time="0.000"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:23: in test_specification_example
+    execute()
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_sdd" name="test_specification_example[S10]" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_sdd.py:23: in test_specification_example
+    execute()
+tests/test_sdd.py:16: in execute
+    manager.add_task(task_id, task_id, duration)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="5" time="0.031" timestamp="2026-09-28T12:23:52.872332+03:00" hostname="57bfcde73c54"><testcase classname="tests.test_atdd" name="test_ac01_plan_project" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_atdd.py:6: in test_ac01_plan_project
+    manager.add_task("A", "Анализ", 3)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_atdd" name="test_ac02_independent_tasks_start_together" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_atdd.py:19: in test_ac02_independent_tasks_start_together
+    manager.add_task("B", "Код", 5)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_atdd" name="test_ac03_invalid_dependency_preserves_valid_plan" time="0.000"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_atdd.py:26: in test_ac03_invalid_dependency_preserves_valid_plan
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_atdd" name="test_ac04_duplicate_link_does_not_delay_task" time="0.001"><failure message="NotImplementedError: Добавление задачи ещё не реализовано">tests/test_atdd.py:36: in test_ac04_duplicate_link_does_not_delay_task
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано</failure></testcase><testcase classname="tests.test_atdd" name="test_ac05_empty_project_and_invalid_input" time="0.000"><failure message="NotImplementedError: Планирование ещё не реализовано">tests/test_atdd.py:45: in test_ac05_empty_project_and_invalid_input
+    assert manager.build_schedule() == []
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:18: in build_schedule
+    raise NotImplementedError("Планирование ещё не реализовано")
+E   NotImplementedError: Планирование ещё не реализовано</failure></testcase></testsuite></testsuites>

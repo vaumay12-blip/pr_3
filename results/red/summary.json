@@ -1,0 +1,34 @@
+{
+  "stage": "red",
+  "implementation": "stages/red/task_manager.py",
+  "python": "3.12.14",
+  "pytest": {
+    "tdd": {
+      "total": 30,
+      "passed": 0,
+      "failed": 30,
+      "errors": 0,
+      "skipped": 0
+    },
+    "atdd": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sdd": {
+      "total": 10,
+      "passed": 0,
+      "failed": 10,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "bdd": {
+    "total": 6,
+    "statuses": {
+      "error": 6
+    }
+  }
+}

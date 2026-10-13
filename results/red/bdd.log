@@ -1,0 +1,119 @@
+USING RUNNER: behave.runner:Runner
+Функционал: Планирование задач с зависимостями
+
+  Сценарий: Цепочка задач
+    Допустим заданы задачи ... error in 0.001s
+      | id | название   | часы |
+      | A  | Анализ     | 2    |
+      | B  | Разработка | 3    |
+      | C  | Проверка   | 1    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+  Сценарий: Независимые задачи выполняются параллельно
+    Допустим заданы задачи ... error in 0.000s
+      | id | название | часы |
+      | B  | Код      | 5    |
+      | A  | Дизайн   | 2    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+  Сценарий: Ожидание завершения всех предшественников
+    Допустим заданы задачи ... error in 0.000s
+      | id | название     | часы |
+      | A  | Анализ       | 3    |
+      | B  | Разработка   | 2    |
+      | C  | Документация | 4    |
+      | D  | Приёмка      | 1    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+  Сценарий: Отклонение циклической зависимости
+    Допустим заданы задачи ... error in 0.000s
+      | id | название | часы |
+      | A  | Анализ   | 2    |
+      | B  | Код      | 3    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+  Сценарий: Неизвестный предшественник
+    Допустим заданы задачи ... error in 0.000s
+      | id | название | часы |
+      | A  | Анализ   | 2    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+  Сценарий: Самозависимость
+    Допустим заданы задачи ... error in 0.000s
+      | id | название | часы |
+      | A  | Анализ   | 2    |
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.12/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+  File "/root/.local/lib/python3.12/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/planning_steps.py", line 8, in given_tasks
+    context.manager.add_task(row["id"], row["название"], int(row["часы"]))
+  File "/workspace/scratch/00b3d1255b64/practice3/code/stages/red/task_manager.py", line 6, in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+NotImplementedError: Добавление задачи ещё не реализовано
+
+
+
+Errored scenarios:
+  features/planning.feature:6  Цепочка задач
+  features/planning.feature:23  Независимые задачи выполняются параллельно
+  features/planning.feature:34  Ожидание завершения всех предшественников
+  features/planning.feature:55  Отклонение циклической зависимости
+  features/planning.feature:69  Неизвестный предшественник
+  features/planning.feature:76  Самозависимость
+
+0 features passed, 0 failed, 1 error, 0 skipped
+0 scenarios passed, 0 failed, 6 error, 0 skipped
+0 steps passed, 0 failed, 6 error, 16 skipped
+Took 0min 0.002s

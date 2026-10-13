@@ -1,0 +1,40 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+____________________________ test_ac01_plan_project ____________________________
+tests/test_atdd.py:6: in test_ac01_plan_project
+    manager.add_task("A", "Анализ", 3)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________ test_ac02_independent_tasks_start_together __________________
+tests/test_atdd.py:19: in test_ac02_independent_tasks_start_together
+    manager.add_task("B", "Код", 5)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+______________ test_ac03_invalid_dependency_preserves_valid_plan _______________
+tests/test_atdd.py:26: in test_ac03_invalid_dependency_preserves_valid_plan
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+_________________ test_ac04_duplicate_link_does_not_delay_task _________________
+tests/test_atdd.py:36: in test_ac04_duplicate_link_does_not_delay_task
+    manager.add_task("A", "Анализ", 2)
+stages/red/task_manager.py:6: in add_task
+    raise NotImplementedError("Добавление задачи ещё не реализовано")
+E   NotImplementedError: Добавление задачи ещё не реализовано
+__________________ test_ac05_empty_project_and_invalid_input ___________________
+tests/test_atdd.py:45: in test_ac05_empty_project_and_invalid_input
+    assert manager.build_schedule() == []
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+stages/red/task_manager.py:18: in build_schedule
+    raise NotImplementedError("Планирование ещё не реализовано")
+E   NotImplementedError: Планирование ещё не реализовано
+=========================== short test summary info ============================
+FAILED tests/test_atdd.py::test_ac01_plan_project - NotImplementedError: Доба...
+FAILED tests/test_atdd.py::test_ac02_independent_tasks_start_together - NotIm...
+FAILED tests/test_atdd.py::test_ac03_invalid_dependency_preserves_valid_plan
+FAILED tests/test_atdd.py::test_ac04_duplicate_link_does_not_delay_task - Not...
+FAILED tests/test_atdd.py::test_ac05_empty_project_and_invalid_input - NotImp...
+5 failed in 0.03s

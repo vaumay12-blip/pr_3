@@ -1,0 +1,8 @@
+[run]
+branch = True
+include = */task_manager.py
+omit = */stages/*
+
+[report]
+show_missing = True
+precision = 2
